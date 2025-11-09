@@ -1,21 +1,21 @@
 package cv4;
 
+import cv3.PermutationFromPhrase;
 import java.util.ArrayList;
 import java.util.List;
-
-import static cv3.PermutationFromPhrase.permutationFromPhrase;
+;
 
 public class SingleColumnarTransposition {
     public Integer[] key;
 
-    private SingleColumnarTransposition(){}
+    public SingleColumnarTransposition(){}
 
     public SingleColumnarTransposition(Integer[] key){
         this.key = key;
     }
 
     public SingleColumnarTransposition(String key){
-        this.key = permutationFromPhrase(key);
+        this.key = PermutationFromPhrase.permutationFromPhrase(key);
     }
 
     public String encrypt(String plainText) {
