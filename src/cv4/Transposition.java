@@ -43,13 +43,13 @@ public class Transposition {
         for(int i = 0; i < blocks; i++) {
             int idx =  i * block_len;
             String substring = plainText.substring(idx, idx + block_len);
-            String reordered = applyPermutaion(substring, key);
+            String reordered = applyPermutation(substring, key);
             cryptedText.append(reordered);
         }
         return cryptedText.toString();
     }
 
-    public static String applyPermutaion(String substring, Integer[] perm) {
+    public static String applyPermutation(String substring, Integer[] perm) {
         char[] output = new char[perm.length];
         for(int i = 0; i < perm.length; i++) {
             output[perm[i]] =  substring.charAt(i);

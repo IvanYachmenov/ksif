@@ -6,7 +6,7 @@ import java.util.List;
 import static cv3.PermutationFromPhrase.permutationFromPhrase;
 
 public class SingleColumnarTransposition {
-    Integer[] key;
+    public Integer[] key;
 
     private SingleColumnarTransposition(){}
 
